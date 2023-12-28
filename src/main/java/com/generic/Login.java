@@ -39,11 +39,11 @@ public class Login {
         
         SeleniumHighlighter.getColor(driver,driver.findElement(pom.pass),"green");//highlight
         driver.findElement(pom.pass).sendKeys(obj.getConfig("PASSWORD"));
-        Thread.sleep(5000);
+        Thread.sleep(2000);
         SeleniumHighlighter.getColor(driver, driver.findElement(pom.loginbtn),"black");//highlight
          driver.findElement(pom.loginbtn).click();
          
-         Thread.sleep(4000);//wait little 4sec
+         Thread.sleep(2000);//wait little 4sec
      	driver.close();
        WebElement logout=driver.findElement(pom.logoutbtn);
       // Explicit wait
